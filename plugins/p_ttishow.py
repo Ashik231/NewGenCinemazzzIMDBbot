@@ -21,7 +21,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url='https://t.me/EvaMariaSupport')
+                InlineKeyboardButton('𝘼𝙙𝙢𝙞𝙣', url='https://t.me/Unavailable4allTime')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,8 +38,8 @@ async def save_group(bot, message):
         bot = await bot.get_me()
         username = bot.username
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{username}?start"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/EvaMariaSupport')
+            InlineKeyboardButton('𝙉𝙚𝙬 𝙈𝙤𝙫𝙞𝙚𝙨📎', url=f"https://t.me/ngc_new_database_1"),
+            InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚𝙨 𝙐𝙥𝙙𝙖𝙩𝙚𝙨🔔', url='https://t.me/ngc_ott_updates')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -104,7 +104,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Succesfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url='https://t.me/EvaMariaSupport')
+            InlineKeyboardButton('𝘼𝙙𝙢𝙞𝙣', url='https://t.me/Unavailable4allTime')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
