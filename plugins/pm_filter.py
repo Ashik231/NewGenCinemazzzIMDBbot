@@ -376,13 +376,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/EvaMariaBot?startgroup=true')
+            InlineKeyboardButton('📌𝙉𝙀𝙒𝙂𝙀𝙉 𝘾𝙄𝙉𝙀𝙈𝘼𝙕𝙕𝙕📌', url='https://t.me/newgen_cinemazzz')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('𝙎𝙚𝙖𝙧𝙘𝙝🔦', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙐𝙥𝙙𝙖𝙩𝙚𝙨🔊', url='https://t.me/ngc_ott_updates')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('𝙃𝙚𝙡𝙥📖', callback_data='help'),
+            InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩🗞️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -409,7 +409,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates'),
+            InlineKeyboardButton('𝙈𝙤𝙫𝙞𝙚 𝙐𝙥𝙙𝙖𝙩𝙚𝙨🔊', url='https://t.me/ngc_ott_updates'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
